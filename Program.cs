@@ -48,7 +48,26 @@ namespace COMP003A.Lectureactivity4
             Console.WriteLine("\n");
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("do-while statement");
+            Console.WriteLine("".PadRight(50, '*'));
 
+            /*the do statement executes a statement or a block of statements while a specified 
+             * boolean expression evaluates to true. because that expression is evaluated after each 
+             * execution of the loop, a do loop executes one or more times. The do statement differs from
+             * a while loop, which executes zero or more times.*/
+            int counter2 = 0; //initial counter2 value
+
+            do
+            {
+                Console.WriteLine($"\tCurrent counter2: {counter2}");
+                counter2++; //increment counter2 by 1
+            }
+            while (counter2 < 10); //loop until counter2 is equal to 10 or greater
+
+            Console.WriteLine("\n");
+            Console.WriteLine("".PadRight(50, '*'));
+            Console.WriteLine("while statement");
+            Console.WriteLine("".PadRight(50, '*'));
+            
            
         }
 
