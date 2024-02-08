@@ -67,7 +67,39 @@ namespace COMP003A.Lectureactivity4
             Console.WriteLine("".PadRight(50, '*'));
             Console.WriteLine("while statement");
             Console.WriteLine("".PadRight(50, '*'));
-            
+
+            /*the while statement executes a statement or a block of statements while a specified
+             * boolean expression evaluates to true. because that expression is evaluated before each 
+             * execution of the loop, a while loop executes zero or more times. the while statement differs
+             * from a do loop, which executes one or more times. */
+
+            int counter3 = 0; //initial counter3 value;
+            while (counter3 < 20)
+            {
+                Console.WriteLine($"\tCurrent counter3: {counter3}");
+                counter3 += 2; //ads 2 to the value of counter3
+            }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("".PadRight(50, '*'));
+            Console.WriteLine("example for loop program that counter from 1-20 and " +
+            "checks if it is odd or even");
+            Console.WriteLine("".PadRight(50, '*'));
+
+            //1. loop variable 'i' is set to 1 instead of 0
+            //2. loop as long as the loop variable is less than or equal to 20
+            //3. incrememnt the loop variable by 1
+            for (int i = 1; i <= 20; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    Console.WriteLine($"\t{i}: even");
+                }
+                else
+                {
+                    Console.WriteLine($"\t{i}: odd");
+                }
+            }
            
         }
 
